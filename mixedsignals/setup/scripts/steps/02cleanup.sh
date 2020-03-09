@@ -2,7 +2,12 @@
 
 echo "simple clean up.."
 
-cd ~
+pwd
+
+# exit 
+cd /
 
 # clean up docker set up stuff
-rm -rf ~/mixedisgnalssite
+#rm -rf /mixedsignals
+
+#ls /
