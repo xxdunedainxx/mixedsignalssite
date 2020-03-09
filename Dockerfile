@@ -7,4 +7,10 @@
 FROM ubuntu:latest
 
 # copy context over
-COPY . /mixedsignals
+COPY . ./mixedsignals
+
+WORKDIR ./mixedsignals/mixedsignals/setup/scripts
+
+RUN sed -i 's/\r//g' ./setup.sh
+
+RUN bash ./setup.sh
