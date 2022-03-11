@@ -1,0 +1,172 @@
+/* Remove styling from list */
+ul {
+  font-family: 'Stag';
+  list-style-type: none;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  
+}
+
+#logo-nav img {
+  border-radius: 50%;
+}
+
+#nav img {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  width: 50%;
+}
+
+#nav-container {
+  background-color: white !important;
+  float:left;
+  display:block;
+  width: 100%;
+}
+
+#nav-hamburger{
+  display: none !important;
+}
+
+.nav-list {
+  border-style: solid;
+  border-color: black;
+  background-color: black;
+}
+
+#nav {
+  width: 100%;
+  float: left;
+  padding: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.nav-text:hover {
+  background-color: white;
+  color:black;
+}
+
+#nav li {
+  display: inline-block;
+  font-size: xx-large;
+  color: white;
+  padding: 50px 50px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color:rgba(0, 0, 0, 0);
+  max-width: 300px;
+  list-style: none;
+}
+
+.nav-text{
+  color: white;
+}
+
+#nav img {
+  max-width: 300px;
+}
+
+#nav a {
+  text-decoration: none; /* no underline */
+}
+
+.hamburger-text {
+  color: white;
+}
+
+#nav-logo {
+  display: block;
+  float: left;
+  padding: 1px 11px !important;
+}
+
+#nav-version {
+   position:absolute;
+   top:0;
+   right:0;
+   margin-top: 20px;
+   display: inline-block !important;
+   font-size: 10px !important;
+   font-family: 'Avenir Book';
+}
+
+#nav li:hover {
+  list-style-type: none;
+  color: black;
+  /*transform: translateY(-10px);*/
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#nav-version:hover {
+  color: white !important;
+  transform: none !important;
+  border-radius: none !important;
+  cursor: none !important;
+}
+
+
+/* Mobile overrides */
+@media only screen and (max-width: 700px) {
+
+  #mobile-nav-list {
+    list-style-type: disc;
+  }
+
+  .mobile-item-text {
+    font-size: xxx-large;
+  }
+
+  #nav {
+    height: 80px;
+  }
+
+  .nav-container {
+    margin: auto;
+    width: 100%;
+    border: 3px solid green;
+    padding: 10px;
+    text-align: center;
+    font-size: medium;
+  }
+
+  #logo-nav {
+    max-height: 150px;
+    max-width: 150px;
+  }
+
+  #nav-container {
+    height: 80px;
+  }
+
+  .nav-text {
+    display: none !important;
+  }
+
+  #nav-hamburger{
+     position:absolute;
+     top:0px;
+     right: 0px;
+     display: inline-block !important;
+     scale: 150%
+  }
+
+  #nav-version {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
+}
